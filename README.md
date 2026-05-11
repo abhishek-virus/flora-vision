@@ -1,3 +1,5 @@
+Live - https://flora-vision-nu.vercel.app
+
 # 🌿 FloraVision
 
 A modern and responsive plant showcase website built using React, Vite, Tailwind CSS, and Framer Motion style animations. FloraVision is designed with a premium glassmorphism UI, smooth layouts, floating plant cards, and a clean dark-green aesthetic inspired by modern Figma designs.
