@@ -1,6 +1,5 @@
-import { Play } from 'lucide-react'
 import { motion } from 'motion/react'
-import Button from './Button'
+
 import plant2 from '../assets/plant2.jpg'
 
 export default function Hero() {
@@ -31,27 +30,7 @@ export default function Hero() {
               “Earth Exhale” symbolizes the purity and vitality of the Earth’s natural environment and its essential role in sustaining life.
             </p>
 
-            <div className="flex flex-wrap items-center gap-6">
-
-              <button className="border border-white/70 rounded-lg w-[130px] h-[46px] text-gray-400 text-[16px] font-normal bg-transparent">
-                Buy Now
-              </button>
-
-              <button className="flex items-center gap-4 group">
-
-                <span className="w-20 h-20 flex items-center justify-center rounded-full border border-white/40">
-
-                  <Play className="w-7 h-7 fill-white text-white ml-1" />
-
-                </span>
-
-                <span className="font-['Quicksand'] text-white text-[18px] font-medium tracking-normal">
-                  Live Demo...
-                </span>
-
-              </button>
-
-            </div>
+            
 
             {/*Card */}
             <motion.div
@@ -65,7 +44,7 @@ export default function Hero() {
 
                 <img
                   alt="Ronnie Hamill"
-                  className="rounded-full w-12 h-12 border-2 border-white/20"
+                  className="rounded-full w-14 h-14 border-2 border-white/20"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgCkYIka_3Ewj8m0TJFuz6ZU9rIYWkk_mhiDqwIOVSURBUavQQCwNPqvdYwILoqvdq3yWinYqz35-Wy4Fbl6xrDbD4hxA5vCGnFp1Xg0jJOuQmKElRBuEFzg8ecvxk0bnONj2iAE_yBB3yEGqz9nALUzJrs0tk5HXRQJ0wB5L1Uhwi-TfK9QmkEef30uOHjY-7qUb7xG4rJ_iBDCEhTFzVkEFJ4CGWED20nrDXlyUVbpIRIzbfvO6GkUXa-PIKGHFO4tQE363W_Q"
                 />
 
@@ -91,71 +70,7 @@ export default function Hero() {
 
           </motion.div>
 
-          {/* Right */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1 }}
-            className="lg:block hidden relative pt-[120px]"
-          >
 
-            {/*Image */}
-            <div className="absolute top-[10px] left-1/2 -translate-x-1/2 z-50 w-full flex justify-center pointer-events-none">
-
-              <img
-                alt="Aglaonema plant"
-                className="w-[260px] sm:w-[300px] lg:w-[340px] h-auto max-w-none object-contain drop-shadow-[0_45px_65px_rgba(0,0,0,0.9)]"
-                src={plant2}
-              />
-
-            </div>
-
-            {/* Card */}
-            <div
-              className="glass-card bg-green/0 backdrop-blur-xl border border-white/10 pt-[240px] px-6 pb-6 w-[380px] h-[450px] flex flex-col relative overflow-visible"
-              style={{
-                clipPath:
-                  'path("M45 0 Q90 0 120 12 Q190 38 260 12 Q290 0 335 0 Q380 0 380 45 L380 405 Q380 450 335 450 L45 450 Q0 450 0 405 L0 45 Q0 0 45 0 Z")',
-              }}
-            >
-
-              <p className="text-[15px] text-gray-300 mb-1 font-normal">
-                Indoor Plant
-              </p>
-
-              <div className="flex items-center justify-between mb-4">
-
-                <h3 className="text-[22px] font-light leading-tight">
-                  Aglaonema plant
-                </h3>
-
-                <span className="text-gray-400 text-[34px] leading-none mr-2">
-                  ›
-                </span>
-
-              </div>
-
-              <div className="flex items-center justify-between mt-2 pr-2">
-
-                <button className="border border-white/70 rounded-lg w-[130px] h-[46px] text-gray-400 text-[16px] font-normal bg-transparent">
-                  Buy Now
-                </button>
-
-              </div>
-
-              <div className="flex justify-center mt-5 gap-2">
-
-                <span className="w-4 h-1 rounded-full bg-white"></span>
-
-                <span className="w-1 h-1 rounded-full bg-white/40"></span>
-
-                <span className="w-1 h-1 rounded-full bg-white/40"></span>
-
-              </div>
-
-            </div>
-
-          </motion.div>
 
         </div>
 

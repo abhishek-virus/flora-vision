@@ -69,3 +69,28 @@ img {
   max-width: 100%;
   height: auto;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+#about {
+  scroll-margin-top: 90px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+#about,
+#plants,
+#contact {
+  scroll-margin-top: 90px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+#trending,
+#top-selling,
+#best-o2 {
+  scroll-margin-top: 90px;
+}
