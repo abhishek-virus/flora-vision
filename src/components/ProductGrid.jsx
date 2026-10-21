@@ -55,8 +55,13 @@ function PlantCard(props) {
     >
       {/* Plant Image */}
       <div
-        className="absolute left-1/2 -translate-x-1/2 z-50 pointer-events-none"
-        style={{ top: imagePosition }}
+        className="pointer-events-none absolute left-1/2 z-50 -translate-x-1/2"
+        style={{
+    top:
+      typeof window !== 'undefined' && window.innerWidth < 640
+        ? `calc(${imagePosition} - 25px)`
+        : imagePosition
+  }}
       >
         <img
           src={image}
