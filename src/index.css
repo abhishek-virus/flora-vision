@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
 @import "tailwindcss";
 
+/* Theme */
 @theme {
   --color-flora-green: #1a2e1a;
   --color-flora-dark: #0a0f0a;
@@ -10,12 +11,14 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 }
 
+/* Base Styles */
 @layer base {
   body {
     @apply bg-flora-dark text-white font-sans selection:bg-green-500 selection:text-white;
   }
 }
 
+/* Reusable Components */
 @layer components {
   .glass-card {
     @apply bg-white/[0.05] backdrop-blur-xl border border-white/10;
@@ -44,11 +47,13 @@
   }
 }
 
+/* Animations */
 @keyframes bounce-slow {
   0%, 100% {
     transform: translateY(-5%);
     animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
+
   50% {
     transform: none;
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
@@ -58,6 +63,8 @@
 .animate-bounce-slow {
   animation: bounce-slow 3s infinite;
 }
+
+/* Global Layout */
 html,
 body,
 #root {
@@ -69,26 +76,16 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-#about {
-  scroll-margin-top: 90px;
-}
-html {
-  scroll-behavior: smooth;
-}
-
+/* Section Scroll Offsets */
 #about,
 #plants,
-#contact {
-  scroll-margin-top: 90px;
-}
-html {
-  scroll-behavior: smooth;
-}
-
+#contact,
 #trending,
 #top-selling,
 #best-o2 {

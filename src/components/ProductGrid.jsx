@@ -12,7 +12,6 @@ import plant6 from '../assets/plant6.jpg'
 import plant7 from '../assets/plant7.jpg'
 import plant8 from '../assets/plant8.jpg'
 import plant9 from '../assets/plant9.jpg'
-import { html } from 'framer-motion/m'
 
 function PlantCard(props) {
   const {
@@ -55,7 +54,7 @@ function PlantCard(props) {
     >
       {/* Plant Image */}
       <div
-        className="pointer-events-none absolute left-1/2 z-50 -translate-x-1/2"
+        className="pointer-events-none absolute left-1/2 z-20 -translate-x-1/2"
         style={{
     top:
       typeof window !== 'undefined' && window.innerWidth < 640

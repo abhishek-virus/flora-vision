@@ -1,7 +1,5 @@
 import { motion } from 'motion/react'
 
-import plant2 from '../assets/plant2.jpg'
-
 export default function Hero() {
 
   return (
